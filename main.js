@@ -1,31 +1,7 @@
-/* const orders = []
- 
-const restaurant = {
-    name: "Bob's Burgers",
-    placeOrder: function (meal) {
-orders.push(meal)
-    }
-}
-const chickenComboMeal = {
-sandwichType: "chicken",
-fries: "true",
-drinkSize: "L"
-}
-const beefSandwich = {
-    sandwichType: "beef",
-    fries: "false",
-    drinkSize: "S"
-}
-restaurant.placeOrder(beefSandwich)
-
-restaurant.placeOrder(chickenComboMeal)
-
-console.table(orders) */
-
 campaignInfo = {
     congDistrict: "TN7th",
     missionStatement: "Elizabeth Sanger wants to return power to the people",
-    donationURL: "https://www.supportSanger/donate.com",
+    donationURL: "https://www.supportSanger.com/donate.",
     regToVoteURL: "https://www.usvotefoundation.org/vote/voter-registration-absentee-voting.htm",
     Biography: "Elizabeth Sanger is a former FBI agent who adopted 3 kids from China and started her own multi-milion dollar business",
     platformStatements: {
@@ -68,13 +44,10 @@ campaignInfo = {
     ]
 }
 
-console.log(campaignInfo.Biography)
-
-function changeBiography(newBiography) {
-campaignInfo.Biography = "newBiography"
-console.log(newBiography)
-return newBiography
+function changeInfo(infoObject, newInfo) {
+campaignInfo[infoObject] = newInfo
+console.log(campaignInfo.congDistrict)
+return newInfo
 }
 
-changeBiography("Elizabeth Sanger is a former nurse")
-
+changeInfo("congDistrict", "TN6th")
